@@ -1,0 +1,113 @@
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo{
+    margin-left: 40px;
+    margin-right: 30px;
+    color: var(--vermelho);
+    font-family: 'Arial', Times;
+    font-size: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-right: 9px;
+}
+
+
+header nav a:hover{
+    color: #AAA;
+}
+
+/*filme principal*/
+main .container{
+    margin-left: 40px;
+    width: 40%;
+}
+
+.filme-principal{
+    background: url('/img/homem-aranha.jpg');
+    
+    height: 700px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.titulo{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao1{
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao1:hover{
+    background-color:rgb(168, 162, 162);
+    color: rgb(27, 26, 26);
+}
+
+.botao2{
+    background-color: rgba(59, 54, 54, 0.8);
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    margin-left: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao2:hover{
+    background-color: rgba(136, 117, 117, 0.8);
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
